@@ -14,7 +14,7 @@ import PrivateLayout from './components/PrivateLayout/PrivateLayout';
 const App: React.FC = () => {
   return (
     <Provider store={store}>
-      <Router>
+      <Router basename="/User-Management">
         <Routes>
 
           <Route path="/" element={<Navigate to="/register" replace />} />
